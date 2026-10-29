@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover beautiful nature destinations and simple ideas for your next outdoor adventure.">
+  <title>Nature Escape | Explore the Outdoors</title>
+  <style>
+    :root {
+      --green: #245c4a;
+      --green-dark: #173f34;
+      --cream: #f7f5ef;
+      --text: #26332d;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--cream);
+    }
+
+    header {
+      padding: 1.25rem 6%;
+      background: var(--green-dark);
+      color: var(--white);
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      margin: 0;
+      font-size: 1.35rem;
+      letter-spacing: 0.04em;
+    }
+
+    nav a {
+      color: var(--white);
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover, nav a:focus {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 3rem;
+    }
+
+    .hero {
+      padding: 2.5rem 0 1.5rem;
+      max-width: 720px;
+    }
+
+    h1 {
+      color: var(--green-dark);
+      font-size: clamp(2.2rem, 5vw, 3.7rem);
+      line-height: 1.1;
+      margin: 0 0 1rem;
+    }
+
+    h2 { color: var(--green); }
+
+    .intro {
+      font-size: 1.15rem;
+      max-width: 650px;
+    }
+
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.1rem;
+      margin: 1.5rem 0 2.5rem;
+    }
+
+    figure {
+      margin: 0;
+      background: var(--white);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 5px 18px rgba(23, 63, 52, 0.10);
+    }
+
+    figure img {
+      display: block;
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    figcaption { padding: 0.8rem 1rem; }
+
+    .tips {
+      background: var(--white);
+      padding: 1.4rem 1.5rem;
+      border-radius: 14px;
+      border-left: 5px solid var(--green);
+    }
+
+    li { margin: 0.45rem 0; }
+
+    .resource-link {
+      color: var(--green-dark);
+      font-weight: bold;
+      text-underline-offset: 3px;
+    }
+
+    footer {
+      padding: 1.4rem 6%;
+      background: var(--green-dark);
+      color: var(--white);
+      text-align: center;
+    }
+
+    footer p { margin: 0; }
+
+    @media (max-width: 700px) {
+      .photo-grid { grid-template-columns: 1fr; }
+      figure img { height: 240px; }
+      nav a { margin: 0 0.8rem 0 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <p class="brand">NATURE ESCAPE</p>
+      <nav aria-label="Main navigation">
+        <a href="#discover">Discover</a>
+        <a href="#tips">Travel Tips</a>
+        <a href="#resources">Resources</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="discover" aria-labelledby="page-title">
+      <p>TAKE A BREATH. FIND YOUR OUTDOORS.</p>
+      <h1 id="page-title">Discover the beauty of nature</h1>
+      <p class="intro">From peaceful forests to mountain views and quiet lakes, spending time outdoors can help us slow down, explore, and appreciate the world around us.</p>
+    </section>
+
+    <section aria-labelledby="gallery-title">
+      <h2 id="gallery-title">Places that inspire adventure</h2>
+      <div class="photo-grid">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=900&q=80" alt="Sunlight filtering through a green forest">
+          <figcaption><strong>Forest trails</strong><br>Walk beneath tall trees and enjoy the quiet.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80" alt="High mountain peaks beneath a clear sky">
+          <figcaption><strong>Mountain views</strong><br>Take in wide-open views and fresh air.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80" alt="Calm lake reflecting mountains and trees">
+          <figcaption><strong>Quiet lakes</strong><br>Pause by the water and enjoy the scenery.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="tips" id="tips" aria-labelledby="tips-title">
+      <h2 id="tips-title">Three simple outdoor tips</h2>
+      <ul>
+        <li>Carry a reusable water bottle and drink water regularly.</li>
+        <li>Wear comfortable shoes and check the weather before leaving.</li>
+        <li>Respect wildlife and take your rubbish home with you.</li>
+      </ul>
+    </section>
+
+    <section id="resources" aria-labelledby="resources-title">
+      <h2 id="resources-title">Keep exploring</h2>
+      <p>Learn more about protecting natural places and enjoying the outdoors responsibly.</p>
+      <p><a class="resource-link" href="https://www.nps.gov/subjects/leave-no-trace/" target="_blank" rel="noopener noreferrer">Read outdoor ethics tips from the National Park Service</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Nature Escape · A student HTML project · Made with care for the outdoors</p>
+  </footer>
+</body>
+</html>
